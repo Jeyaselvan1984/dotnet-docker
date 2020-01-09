@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''cd samples;
 cd aspnetapp;
-docker build --pull -t aspnetapp .'''
+/var/lib/docker build --pull -t aspnetapp .'''
       }
     }
 
