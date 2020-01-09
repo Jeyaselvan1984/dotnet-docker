@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''cd samples;
+        sh '''sudo su root;
+cd samples;
 cd aspnetapp;
 /var/lib/docker build --pull -t aspnetapp .'''
       }
